@@ -1,0 +1,13 @@
+{
+  "name": "ytscript",
+  "version": "1.0.0",
+  "description": "Proof-of-concept for composing a script for YT",
+  "main": "index.js",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@adguard/agtree": "^2.3.0",
+    "@adguard/scriptlets": "^2.1.4"
+  }
+}
