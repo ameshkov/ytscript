@@ -36,7 +36,7 @@ async function main() {
         const ruleScript = getRuleScript(rule);
 
         const finalScript = `// From rule: ${rule.raws.text}
-if ([${domainsList.join(', ')}].includes(window.location.hostname)) {
+if (['youtube.com'].some((domain) => { return window.location.hostname === domain || window.location.hostname.endsWith('.' + domain) })) {
     ${ruleScript}
 }
 `;
